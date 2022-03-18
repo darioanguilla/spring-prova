@@ -5,10 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-
 @Entity
 public class User {
-    
+
     private Integer user_id;
     private String username;
     private String password;
@@ -17,7 +16,6 @@ public class User {
     public User() {
 
     }
-
 
     public User(Integer user_id, String username, String password, String email) {
         this.user_id = user_id;
@@ -28,7 +26,6 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
 
     public Integer getUser_id() {
         return this.user_id;
@@ -62,6 +59,4 @@ public class User {
         this.email = email;
     }
 
-
-    
 }
